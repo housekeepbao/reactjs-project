@@ -6542,18 +6542,29 @@ li a.item-title {
     }
 }
 
+
+
 .omb_login .omb_authTitle {
   text-align: center;
   line-height: 300%;
 }
-  
+.omb_login .omb_row-sm-offset-3
+{
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-left:25%
+}  
 .omb_login .omb_socialButtons a {
-  color: white; // In yourUse @body-bg 
+  color: white; 
   opacity:0.9;
+
 }
 .omb_login .omb_socialButtons a:hover {
-    color: white;
-  opacity:1;      
+  color: white;
+  opacity:1;    
 }
 .omb_login .omb_socialButtons .omb_btn-facebook {background: #3b5998;}
 .omb_login .omb_socialButtons .omb_btn-twitter {background: #00aced;}
@@ -6668,4 +6679,150 @@ span.input-group-addon i {
 .login-register{
   font-size: 11px;
   text-align: center;
+}
+/* Eric_Jhang add shop list css stytle*/
+.widget-area {
+  border: 1px solid #dedede;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.filter-title-1 {
+  border-bottom: 1px solid #dedede;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.filter-title-2 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  position: relative;
+  text-transform: uppercase;
+}
+.filter-title-2::before {
+  background: #eaeaec none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  width: 50px;
+}
+enu li a {
+  display: block;
+  font-size: 14px;
+  line-height: 35px;
+  overflow: hidden;
+  position: relative;
+  text-transform: capitalize;
+  z-index: 1;
+}
+.sidebar-menu li a::before {
+  background: #dedede none repeat scroll 0 0;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 12px;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+  z-index: -1;
+}
+.sidebar-menu li a .color-name {
+  background: #fff none repeat scroll 0 0;
+  display: block;
+  float: left;
+  min-width: 70px;
+}
+.sidebar-menu li a .number {
+  background: #fff none repeat scroll 0 0;
+  display: block;
+  float: right;
+  text-align: right;
+  width: 26px;
+}
+.sidebar-menu li a:hover, .sidebar-menu li.active a {color: #32c4d1;}
+.sidebar-menu li a:hover::before, .sidebar-menu li.active a::before {
+  background: #32c4d1;
+}
+
+.widget-area .widget {
+  overflow: hidden;
+  padding: 20px;
+}
+.price_filter {
+  padding-bottom: 6px;
+  padding-top: 13px;
+}
+.price_filter .ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
+    background: #eaeaec none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 0;
+    height: 2px;
+    margin-bottom: 30px;
+    margin-left: auto;
+}
+.price_filter .ui-slider-handle.ui-state-default.ui-corner-all {
+  background: #eaeaec none repeat scroll 0 0;
+  border: 2px solid #32c4d1;
+  border-radius: 50%;
+  height: 12px;
+  margin-top: 1px;
+  width: 12px;
+}
+.price_filter .ui-slider-range {
+  background: #32c4d1 none repeat scroll 0 0;
+  height: 4px;
+  top: -1px;
+}
+.price_slider_amount > input[type="text"] {
+  border: medium none;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-left: 10px;
+  width: 120px;
+}
+.price_slider_amount > input[type="submit"] {
+  background: transparent none repeat scroll 0 0;
+  border-style: none;
+  color: #666;
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 25px;
+}
+/* Shop Menu */
+.shop-category-menu {
+  border-bottom: 1px solid #dedede;
+  margin: 48px 0 40px;
+}
+.shop-menu {text-align: center;}
+.shop-menu ul li {
+    display: inline-block;
+    margin-right: 25px;
+  position: relative;
+}
+.shop-menu ul li:before {
+  background: #32c4d1 none repeat scroll 0 0;
+  content: "";
+  height: 2px;
+  opacity: 0;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  transform: scale(0);
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+.shop-menu ul li a {
+  display: block;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 18px 0;
+  text-transform: capitalize;
 }

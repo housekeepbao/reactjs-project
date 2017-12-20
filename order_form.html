@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="House Keep 家事寶 家事清潔 ">
+	<meta name="author" content="housekeepbao.com">
+	<meta name="format-detection" content="telephone=no">
+	
+	<title>家事寶 家事清潔</title>
+	<!-- bootstrap V4 CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- Vendors -->
+	<!-- <link href="css/vendor/bootstrap.min.css" rel="stylesheet"> -->
+	<link href="css/vendor/animate.min.css" rel="stylesheet">
+	<link href="css/vendor/slick.css" rel="stylesheet">
+	<link href="css/vendor/lightbox.css" rel="stylesheet">
+	<link href="css/vendor/bootstrap-datetimepicker.css" rel="stylesheet">
+	<link href="css/vendor/nouislider.css" rel="stylesheet">
+	<!-- Template Style -->
+	<link href="css/custom.css" rel="stylesheet">
+	<!-- Icon Font-->
+	<link href="fonts/icomoon/style.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<!-- Google map -->
+	 <!-- 以下引入 react.js, react-dom.js（react 0.14 後將 react-dom 從 react 核心分離，更符合 react 跨平台抽象化的定位）以及 babel-core browser 版 -->
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.2.1/react.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.2.1/react-dom.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.18.1/babel.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+</head>
+
+<body class="page-index">
+	<!-- Header -->
+	<!-- 這邊的 id="example" 的 <div> 為 React Component 要插入的地方 -->
+	
+	<!-- 以下就是包在 babel（透過進行語言翻譯）中的 React JSX 語法，babel 會將其轉為瀏覽器看的懂得 JavaScript -->
+	<script type="text/babel">
+		ReactDOM.render(
+		<h1>React here!</h1>,
+		document.getElementById('mount-point')
+		);
+	</script>
+
+	<header class="page-header header-sticky">
+		<div class="page-header-top">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo/logo.jpg" alt=""></a>
+					<div class="shine"></div>
+				</div>
+				<div class="quote-button-wrap"><a href="#" class="btn"><i class="icon icon-bell"></i>Login</a></div>
+				<a href="#" class="menu-toggle"><i class="icon-line-menu"></i><i class="icon-cancel"></i></a>
+			</div>
+		</div>
+		<div class="page-header-menu">
+			<div class="container">
+				<ul class="menu">
+					<li class="active"><a href="index.html">首頁</a></li>
+					<li><a href="">關於我們</a></li>
+					<li><a href="">服務<span class="arrow"></span></a>
+						<ul class="sub-menu">
+							<li><a href="">套房清潔</a></li>
+							<li><a href="">家庭清潔</a></li>
+							<li><a href="">大掃除</a></li>
+						</ul>
+					</li>
+					<li><a href="">常見問題</a></li>
+					<li><a href="">部落格<span class="arrow"></span></a>
+					<li><a href="">聯絡我們</a></li>	
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- /Header -->
+	<main class="page-main">
+		<!-- Slider -->
+		<div class="block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 class="text-center h-lg">注意</h3>
+                        <ol>
+                            <li>服務時間最低兩小時起</li>
+                            <li>可以選擇由家事寶團隊為您服務或是一般潔客，我們保證所有潔客都經過嚴格篩選與訓練</li>
+                            <li>家事寶團隊服務一小時費用 NT400元起</li>
+                            <li>如果總數時間大於8小時，為了節省您的時間，將由家事寶派遣兩人團隊來替您服務喔</li>
+                            <li>如果沒有你家的區域可以選，表示該區域家事寶還未開放服務喔</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class = "row">
+                    <label class = "col-sm-3 col-xs-6">選擇清潔時數</label>
+                    <div class="col-sm-3 col-xs-6">
+                        <select name="choicehour">
+                            <option value="2">2小時</option>
+                            <option value="2.5">2.5小時</option>
+                            <option value="3">3小時</option>
+                        </select>
+                    </div>
+                </div>
+                <div class = "row">
+                        <label class = "col-sm-3 col-xs-6">有無寵物</label>
+                        <div class="col-sm-3 col-xs-6">
+                            <label for ="havePets" class="radio-inline">
+                                <input type="radio"  name="pets" value="有寵物" id="havePets" class="pets">
+                                有寵物
+                            </label>
+                            <label for ="noPets" class="radio-inline">
+                                <input type="radio" name="pets" value id="noPets" class="pets">
+                                無寵物
+                            </label>
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+	</main>
+	<!-- Footer -->
+	<!-- <footer class="page-footer">
+		<div class="page-footer-menu">
+			<div class="container">
+				<ul class="menu">
+					<li><a href="index.html">首頁</a></li>
+					<li><a href="about.html">關於我們</a></li>
+					<li><a href="services.html">我們的服務</a></li>
+					<li><a href="faq.html">常見問題</a></li>
+					<li><a href="blog-posts.html">部落格</a></li>
+					<li><a href="contact.html">聯絡我們</a></li>
+				</ul>
+				<div class="footer-ribbon">
+					<img src="images/footer-ribbon.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="page-footer-bot">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo/logo-middle.png" alt=""></a>
+				</div>
+				<div class="page-footer-phone"><span>聯絡方式:</span> <span class="phone-number">800-123-4567</span></div>
+				<div class="page-footer-shedule"><i class="icon icon-clock"></i>早上8:00 - 晚上10:00
+					<br>星期一到星期天/div>
+				<div>
+					<ul class="social-list">
+						<li><a href="#"><i class="icon-google-plus-logo"></i></a></li>
+						<li><a href="#"><i class="icon-facebook-logo"></i></a></li>
+						<li><a href="#"><i class="icon-twitter-logo"></i></a></li>
+						<li><a href="#"><i class="icon-instagram-logo"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-copyright">© 2017 Cleaner Service.</div>
+			<div class="backToTop js-backToTop">
+				<i class="icon icon-right-arrow"></i>
+			</div>
+		</div>
+	</footer> -->
+	<!-- /Footer -->
+	<!-- External JavaScripts -->
+	<script src="js/vendor/jquery.js"></script>
+	<!--<script src="js/vendor/bootstrap.min.js"></script>-->
+	<script src="js/vendor/slick.min.js"></script>
+	<script src="js/vendor/isotope.pkgd.min.js"></script>
+	<script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+	<script src="js/vendor/lightbox.min.js"></script>
+	<script src="js/vendor/jquery.scroll-with-ease.min.js"></script>
+	<script src="js/vendor/jquery.form.js"></script>
+	<script src="js/vendor/jquery.validate.min.js"></script>
+	<script src="js/vendor/moment.js"></script>
+	<script src="js/vendor/bootstrap-datetimepicker.min.js"></script>
+	<script src="js/vendor/jquery.waypoints.min.js"></script>
+	<script src="js/vendor/jquery.countTo.js"></script>
+	<script src="js/vendor/jquery.print.js"></script>
+	<script src="js/vendor/jquery.dotdotdot.min.js"></script>
+	<script src="js/vendor/nouislider.min.js"></script>
+	<script src="js/vendor/jquery.elevateZoom-3.0.8.min.js"></script>
+	<!-- Custom JavaScripts -->
+	<script src="js/custom.js"></script>
+	<script src="js/forms.js"></script>
+	<!-- Bootstrap JavaScript & Jquery-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+
+</html>
