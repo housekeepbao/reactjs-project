@@ -6611,7 +6611,7 @@ li a.item-title {
     margin-top:10px;
   }   
 }
-// Eric_Jhang Register CSS
+/* Eric_Jhang Register CSS*/
 .main-login{
   background-color: #fff;
     /* shadows and rounded borders */
@@ -6825,4 +6825,22 @@ enu li a {
   line-height: 20px;
   padding: 18px 0;
   text-transform: capitalize;
+}
+.formGroup .btn{
+  border: 1px dashed rgb(204, 204, 204);
+  margin-top: 28px;
+  padding: 6px 12px;
+  color: rgb(255, 255, 255);
+  /*text-shadow: 0 1px #fff;*/
+  cursor: pointer;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  /*-moz-box-shadow: 0 1px #fff inset, 0 1px #ddd;*/
+  /*-webkit-box-shadow: 0 1px #fff inset, 0 1px #ddd;*/
+  /*box-shadow: 0 1px #fff inset, 0 1px #ddd;*/
+  width: 30%;
+  text-align: center;
+  background-color :rgb(40, 97, 255);
+  opacity : 0.9;
 }

@@ -70,7 +70,6 @@
 					</li>
 					<li><a href="">常見問題</a></li>
 					<li><a href="">部落格<span class="arrow"></span></a>
-					<li><a href="">成為家事員</a></li>
 					<li><a href="">聯絡我們</a></li>	
 					</li>
 					
@@ -84,61 +83,75 @@
 		<div class="block">
             <div class="container">               
 				<div class="row justify-content-start">
-					<div class="col-lg-4 col-md-4">
+					<div class="col-lg-4">
 					</div>
 					<div class="col-lg-8 col-sm-12 col-md-8">
-							<div class="row">
-									<div class="col-md-8">
-										<h3 class="text-center h-lg">注意</h3>
-										<ol>
-											<li>服務時間最低兩小時起</li>
-											<li>可以選擇由家事寶團隊為您服務或是一般潔客，我們保證所有潔客都經過嚴格篩選與訓練</li>
-											<li>家事寶團隊服務一小時費用 NT400元起</li>
-											<li>如果總數時間大於8小時，為了節省您的時間，將由家事寶派遣兩人團隊來替您服務喔</li>
-											<li>如果沒有你家的區域可以選，表示該區域家事寶還未開放服務喔</li>
-										</ol>
+						<div class="row">
+								<div class="col-md-8">
+									<h3 class="text-center h-lg">注意</h3>
+									<ol>
+										<li>服務時間最低兩小時起</li>
+										<li>可以選擇由家事寶團隊為您服務或是一般潔客，我們保證所有潔客都經過嚴格篩選與訓練</li>
+										<li>家事寶團隊服務一小時費用 NT400元起</li>
+										<li>如果總數時間大於8小時，為了節省您的時間，將由家事寶派遣兩人團隊來替您服務喔</li>
+										<li>如果沒有你家的區域可以選，表示該區域家事寶還未開放服務喔</li>
+									</ol>
+								</div>
+						</div>
+						<div class="row">
+							<label for="address" class="col-sm-2 col-xs-12 control-label">打掃地址</label>
+							<div class="col-sm-10 col-xs-12">
+								<div class="row">
+									<div class="col-md-12 col-sm-12">
+										<div id="twzipcode" class="w100" style="display: inline-block;">
+											<div style="display: inline;">
+												<select name="county" class="addressCounty formControl county">
+													<option value="選擇城市">選擇城市</option>
+													<option value="台北市">台北市</option>
+													<option value="新北市">新北市</option>
+													<option value="桃園市">桃園市</option>
+												</select> 
+												<select name="district" class="addressDistrict formControl district">
+													<option value="選擇地區">選擇地區</option>
+												</select>
+											</div> 
+											<input name="address" type="text" id="address" placeholder="請填上正確的地址" class="formControl address">
+										</div> 
+									</div>
+								</div>	
+							</div>
+						</div>
+						<div class = "row">
+							<label for="address" class="col-sm-2 col-xs-12 control-label">聯絡資訊</label> 
+							<div class="col-sm-10 col-xs-12">
+								<div class="row">
+									<div class="col-md-6 col-sm-12">
+										<p class="subject">姓名</p> 
+										<div class="formGroup">
+											<input type="text" name="name" id="name" class="formControl" placeholder="王小明">
+											<!---->
+										</div>
+									</div> 
+									<div class="col-md-6 col-sm-12">
+										<p class="subject">手機</p>
+										<div class="formGroup">
+											<input type="tel" name="phone" class=" formControl" placeholder="0912345678">
+											<!---->
+										</div>
+									</div> 
+									<div class="col-md-12 col-sm-12">
+										<p class="subject">電子信箱</p> 
+										<div class="formGroup">
+											<input type="email" name="email" class="formControl" placeholder="service@jackercleaning.com">
+											<!---->
+										</div>
 									</div>
 								</div>
-						<div class = "row">
-							<label class = "col-sm-3 col-xs-6">選擇清潔時數</label>
-							<div class="col-sm-3 col-xs-6">
-								<select name="choicehour">
-									<option value="2">2小時</option>
-									<option value="2.5">2.5小時</option>
-									<option value="3">3小時</option>
-								</select>
-							</div>
+							</div>		
 						</div>
-						<div class = "row">
-								<label class = "col-sm-3 col-xs-6">有無寵物</label>
-								<div class="col-sm-3 col-xs-6">
-									<label for ="havePets" class="radio-inline">
-										<input type="radio"  name="pets" value="有寵物" id="havePets" class="pets">
-										有寵物
-									</label>
-									<label for ="noPets" class="radio-inline">
-										<input type="radio" name="pets" value id="noPets" class="pets">
-										無寵物
-									</label>
-								</div>
-						</div>
-
-						<div class = "row">
-							<label class = "col-sm-3 col-xs-6">指定性別</label>
-							<div class="col-sm-3 col-xs-6">
-								<label class="sex radio-inline">
-									<input type="radio"  name="sex" value="female" >
-									指定女性
-								</label>
-								<label  class="sex radio-inline">
-									<input type="radio" name="sex" value="both"  >
-									不指定
-								</label>
-							</div>
-						</div>
-
 						<div class="formGroup  ">
-							<a href="order_form_second_page.html"  type="button" id="firstorderstepbtn" class="btn ">下一步</a>
+							<a href="order_form.html"  type="button" id="firstorderstepbtn" class="btn ">上一步</a>
+							<a href="order_form_second_page.html" type="button" id="firstorderstepbtn" class="btn ">下一步</a>
 						</div>
 					</div>
 			</div>

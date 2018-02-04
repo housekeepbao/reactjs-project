@@ -23,6 +23,8 @@
 		<link href="fonts/icomoon/style.css" rel="stylesheet">
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+		<!-- Font Awssome-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 		<!-- Google map -->
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
     </head>
@@ -65,69 +67,224 @@
 	<main class="page-main">
 		<!-- //Breadcrumbs Block -->
 		<div class="block">
-			<h2 class="text-center h-lg h-decor">帳號登入/註冊</h2>
+			<h2 class="text-center h-lg h-decor">家事員註冊</h2>
 			<div class="container">
-					<div class="omb_login">
-				    	<h3 class="omb_authTitle">登入 或者<a href="register_form.html">註冊</a></h3>
-						<div class="row omb_row-sm-offset-3 omb_socialButtons">
-				    	    <div class="col-xs-4 col-sm-2">
-						        <a href="#" class="btn btn-lg btn-block omb_btn-facebook">
-							        <i class="fa fa-facebook visible-xs"></i>
-							        <span class="hidden-xs">Facebook</span>
-						        </a>
-					        </div>
-				        	<div class="col-xs-4 col-sm-2">
-						        <a href="#" class="btn btn-lg btn-block omb_btn-twitter">
-							        <i class="fa fa-twitter visible-xs"></i>
-							        <span class="hidden-xs">Twitter</span>
-						        </a>
-					        </div>	
-				        	<div class="col-xs-4 col-sm-2">
-						        <a href="#" class="btn btn-lg btn-block omb_btn-google">
-							        <i class="fa fa-google-plus visible-xs"></i>
-							        <span class="hidden-xs">Google+</span>
-						        </a>
-					        </div>	
-						</div>
-						<div class="row omb_row-sm-offset-3 omb_loginOr">
-							<div class="col-xs-12 col-sm-6">
-								<hr class="omb_hrOr">
-								<span class="omb_spanOr">或者</span>
-							</div>
-						</div>
-						<div class="row omb_row-sm-offset-3">
-							<div class="col-xs-12 col-sm-6">	
-							    <form class="omb_loginForm" action="" autocomplete="off" method="POST">
-									<div class="input-group">
-										<span class="input-group-addon"><i class="fa fa-user"></i></span>
-										<input type="text" class="form-control" name="username" placeholder="電話號碼">
+				<div class="main-login-worker main-center-worker">
+					<form class="" method="post" action="#">
+					    <div class="form">
+							<h4>基本資料</h4> 
+							<div class="formRow">
+								<div class="form-group cols_2">
+									<div>
+										<input type="text" name="name" placeholder="您的姓名" class="formControl input" data-vv-id="1" aria-required="true" aria-invalid="true"> 
+										<!---->
 									</div>
-									<span class="help-block"></span>
-														
-									<div class="input-group">
-										<span class="input-group-addon"><i class="fa fa-lock"></i></span>
-										<input  type="password" class="form-control" name="password" placeholder="密碼">
+								</div> 
+								<div class="form-group cols_2">
+									<select name="sex" id="" class="formControl">
+										<option disabled="disabled" value="">請選擇您的性別</option> 
+										<option value="female">女</option> 
+										<option value="male">男</option>
+									</select>
+								</div> 
+								<div class="form-group cols_2">
+									<select id="birth" name="birth_year" placeholder="您的出生年" class="formControl">
+										<option disabled="disabled" value="">請選擇</option> 
+										<option>1935</option>
+										<option>1936</option>
+										<option>1937</option>
+										<option>1938</option>
+										<option>1939</option>
+										<option>1940</option>
+										<option>1941</option>
+										<option>1942</option>
+										<option>1943</option>
+										<option>1944</option>
+										<option>1945</option>
+										<option>1946</option>
+										<option>1947</option>
+										<option>1948</option>
+										<option>1949</option>
+										<option>1950</option>
+										<option>1951</option>
+										<option>1952</option>
+										<option>1953</option>
+										<option>1954</option>
+										<option>1955</option>
+										<option>1956</option>
+										<option>1957</option>
+										<option>1958</option>
+										<option>1959</option>
+										<option>1960</option>
+										<option>1961</option>
+										<option>1962</option>
+										<option>1963</option>
+										<option>1964</option>
+										<option>1965</option>
+										<option>1966</option>
+										<option>1967</option>
+										<option>1968</option>
+										<option>1969</option>
+										<option>1970</option>
+										<option>1971</option>
+										<option>1972</option>
+										<option>1973</option>
+										<option>1974</option>
+										<option>1975</option>
+										<option>1976</option>
+										<option>1977</option>
+										<option>1978</option>
+										<option>1979</option>
+										<option>1980</option>
+										<option>1981</option>
+										<option>1982</option>
+										<option>1983</option>
+										<option>1984</option>
+										<option>1985</option>
+										<option>1986</option>
+										<option>1987</option>
+										<option>1988</option>
+										<option>1989</option>
+										<option>1990</option>
+										<option>1991</option>
+										<option>1992</option>
+										<option>1993</option>
+										<option>1994</option>
+										<option>1995</option>
+										<option>1996</option>
+										<option>1997</option>
+										<option>1998</option>
+										<option>1999</option>
+										<option>2000</option>
+										<option>2001</option>
+										<option>2002</option>
+										<option>2003</option>
+										<option>2004</option>
+										<option>2005</option>
+										<option>2006</option>
+										<option>2007</option>
+										<option>2008</option>
+										<option>2009</option>
+										<option>2010</option>
+										<option>2011</option>
+										<option>2012</option>
+										<option>2013</option>
+										<option>2014</option>
+										<option>2015</option>
+										<option>2016</option>
+										<option>2017</option>
+										<option>2018</option>
+									</select>
+								</div>
+							</div> 
+							<div class="formRow">
+								<div class="form-group cols_2">
+									<div>
+										<input type="tel" name="phone" placeholder="您的連絡電話" class="formControl input" data-vv-id="2" aria-required="true" aria-invalid="false">
+										<!---->
 									</div>
-				                    <span class="help-block">密碼錯誤</span>
-
-									<button class="btn btn-lg btn-primary btn-block" type="submit">登入</button>
-								</form>
+								</div> 
+								<div class="form-group cols_2">
+									<div>
+										<input type="email" name="email" placeholder="您的電子信箱" class="formControl">
+									</div>
+								</div>
 							</div>
-				    	</div>
-						<div class="row omb_row-sm-offset-3">
-							<div class="col-xs-12 col-sm-3">
-								<label class="checkbox">
-									<input type="checkbox" value="remember-me">記住帳號
-								</label>
+							<div>
+								<div class="form-group ">
+									<div>
+										<input type="text" name="address" placeholder="您的居住地址" class="formControl">
+									</div>
+								</div>
 							</div>
-							<div class="col-xs-12 col-sm-3">
-								<p class="omb_forgotPwd">
-									<a href="#">忘記密碼?</a>
-								</p>
+							<h4>應徵資訊</h4> 
+							<ul id="applySurvey">
+							<div class="questionFormSmall ">
+								<li>有無從事過清潔相關工作?</li> 
+								<div class="moreInfo controlGroup">
+									<label>
+										<input type="radio" id="noExperience" value="no" name="experience" checked="checked">無經驗
+									</label> 
+									<label>
+										<input type="radio" value="yes" name="experience" id="hasExperience">
+										有
+										<input type="number" name="experience_year" placeholder="" disabled="disabled" class="formControl hasExperience smallTextField w8">
+										年經驗 ,曾於
+										<input type="text" id="workAt" name="experience_at" placeholder="單位名稱" disabled="disabled" class="formControl hasExperience smallTextField w30">服務
+									</label>
+								</div> 
+								<li>您上班所使用的交通工具</li>
+								<div class="moreInfo">
+									<label>
+										<input type="radio" name="transport" value="機車" checked="checked">機車
+									</label>
+									<label>
+										<input type="radio" name="transport" value="汽車">汽車
+									</label>
+									<label>
+										<input type="radio" name="transport" value="大眾運輸工具">大眾運輸工具（捷運、公車）
+									</label>
+								</div>
+								<li>你欲應徵的工作區域</li> 
+								<div class="moreInfo">
+									<select name="county" id="" class="formControl input" data-vv-id="3" aria-required="true" aria-invalid="false">
+										<option disabled="disabled" value="">請選擇</option> 
+										<option>台北市</option>
+										<option>新北市</option>
+										<option>新竹市</option>
+										<option>新竹縣</option>
+										<option>桃園市</option>
+										<option>台中市</option>
+										<option>台南市</option>
+										<option>高雄市</option>
+										<option>基隆市</option>
+									</select>   
+								</div> 
+								<div class="questionFormSmall ">
+									<li>您每個禮拜可提供的工作天數 </li> 
+									<p class="listDetail">（建議一個禮拜提供18小時以上工作時數）</p> 
+									<div class="moreInfo">
+										<select name="available" id="" class="formControl">
+											<option disabled="disabled" value="">請選擇</option> 
+											<option value="1">1天</option> 
+											<option value="2">2天</option> 
+											<option value="3">3天</option> 
+											<option value="4">4天</option>
+											<option value="5">5天</option> 
+											<option value="6">6天</option> 
+											<option value="7">7天</option>
+										</select>
+									</div>
+								</div>
+								<div class="questionFormSmall">
+									<li>備註留言(若曾聽過潔客幫說明會請備註告知，會加快面談流程)</li> 
+									<textarea name="ps" class="formControl"></textarea>
+								</div> 
+								<div class="questionFormSmall">
+									<div class="mT5">
+										<div>
+											<div id="g-recaptcha" data-sitekey="6LcnKSwUAAAAAE_U-zBTlfcTxroRyuPbdE-weyF8" data-size="100" class="g-recaptcha">
+												<div style="width: 304px; height: 78px;">
+													<div>
+														<iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LcnKSwUAAAAAE_U-zBTlfcTxroRyuPbdE-weyF8&amp;co=aHR0cHM6Ly93d3cuamFja2VyY2xlYW5pbmcuY29tOjQ0Mw..&amp;hl=zh-TW&amp;v=v1515997865826&amp;size=normal&amp;cb=klgepm60vog4" width="304" height="78" role="presentation" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox">
+														</iframe>
+													</div>
+													<textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; ">
+													</textarea>
+												</div>
+											</div>
+											<!---->
+										</div>
+									</div> 
+									<div class="text-center mT20">
+										<input type="submit" name="" class="btn btn-info" value="下一步"> <input type="hidden" name="_token" value="0nC3AT8CXgRY6L7aeTkuLlszHh05sph0zzOGVZGh">
+									</div>
+								</div>
 							</div>
-						</div>	    	
-					</div>
-
+							</ul>
+						</div>												
+					</form>
+				</div>
 			</div>
 		</div>
 	</main>

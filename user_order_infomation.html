@@ -23,8 +23,6 @@
 		<link href="fonts/icomoon/style.css" rel="stylesheet">
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-		<!-- Font Awssome-->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 		<!-- Google map -->
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
     </head>
@@ -34,48 +32,31 @@
 		<div class="page-header-top">
 			<div class="container">
 				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" alt=""></a>
+					<a href="index.html"><img src="images/logo/logo.jpg" alt=""></a>
 					<div class="shine"></div>
 				</div>
-				<div class="page-header-top-middle">
-					<div class="page-header-slogan visible-lg">We are Cleaning Experts!</div>
-					<div class="page-header-shedule hidden-xs"><i class="icon icon-clock"></i>8:00am - 10:00pm
-						<br>Mon - Sun</div>
-					<div class="page-header-phone text-right"><span class="visible-lg visible-md">Call us on:</span> <span class="phone-number">800-123-4567</span></div>
-				</div>
-				<div class="quote-button-wrap"><a href="order-form.html" class="btn"><i class="icon icon-bell"></i>GET A QUOTE</a></div>
+				<div class="quote-button-wrap"><a href="login_01.html" class="btn"><i class="icon icon-bell"></i>Login</a></div>
 				<a href="#" class="menu-toggle"><i class="icon-line-menu"></i><i class="icon-cancel"></i></a>
 			</div>
 		</div>
 		<div class="page-header-menu">
 			<div class="container">
 				<ul class="menu">
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="services.html">Our Services<span class="arrow"></span></a>
+					<li class="active"><a href="index.html">首頁</a></li>
+					<li><a href="">關於我們</a></li>
+					<li><a href="">服務<span class="arrow"></span></a>
 						<ul class="sub-menu">
-							<li><a href="service-page-1.html">Apartment Cleaning</a></li>
-							<li><a href="service-page-2.html">House Cleaning</a></li>
-							<li><a href="service-page-3.html">Move In / Move Out</a></li>
-							<li><a href="service-page-4.html">Сarpet Сleaning</a></li>
-							<li><a href="service-page-5.html">After Renovation</a></li>
-							<li><a href="service-page-6.html">Curtain Cleaning</a></li>
-							<li><a href="service-page-7.html">Window Cleaning</a></li>
-							<li><a href="service-page-8.html">Commercial Cleaning</a></li>
-							<li><a href="service-page-9.html">Residential Cleaning</a></li>
+							<li><a href="">套房清潔</a></li>
+							<li><a href="">家庭清潔</a></li>
+							<li><a href="">大掃除</a></li>
 						</ul>
 					</li>
-					<li><a href="faq.html">FAQs</a></li>
-					<li><a href="blog-posts.html">Blog<span class="arrow"></span></a>
-						<ul class="sub-menu">
-							<li><a href="blog-posts.html">Blog Posts</a></li>
-							<li><a href="blog-posts-masonry.html">Blog Posts Masonry</a></li>
-							<li><a href="blog-post-page.html">Blog Post Page</a></li>
-						</ul>
+					<li><a href="">常見問題</a></li>
+					<li><a href="">部落格<span class="arrow"></span></a>
+					<li><a href="">成為家事員</a></li>
+					<li><a href="">聯絡我們</a></li>	
 					</li>
-					<li><a href="testimonials.html">Testimonials</a></li>
-					<li><a href="shop.html">Shop</a></li>
-					<li><a href="contact.html">Contacts</a></li>
+					
 				</ul>
 			</div>
 		</div>
@@ -84,27 +65,55 @@
 	<main class="page-main">
 		<!-- //Breadcrumbs Block -->
 		<div class="block">
-			<h2 class="text-center h-lg h-decor">Order Form</h2>
+			<h1  class="text-center h-lg h-decor">訂單資訊</h1>
 			<div class="container">
-			<div class="main-login main-center">
-					<form class="" method="post" action="#">
-						<div class="form-group">
-							<label for="username" class="cols-sm-2 control-label">輸入驗證碼</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<input type="text" class="form-control" name="confirm" id="confirm"  placeholder="輸入簡訊內的驗證碼"/>
-								</div>
+				<div class="row">
+					<div class="col-lg-12 col-sm-12 col-md-12">
+						<div class="row">
+							<label for="consumer_name" class="col-sm-4 col-xs-12 text-right">雇主姓名:</label>
+							<div class="col-sm-8 col-xs-12 ">
+								<p>韋小寶</p>
 							</div>
 						</div>
-
-						
-						<div class="form-group ">
-							<a href="login_01.html"  type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">送出</a>
+						<div class="row">
+							<label for="consumer_kindofservice" class="col-sm-4 col-xs-12 text-right">服務需求:</label>
+							<div class="col-sm-8 col-xs-12 ">
+								<p>鐘點清潔</p>
+							</div>
 						</div>
-						
-					</form>
-				</div>
-			</div>
+						<div class="row">
+							<label for="consumer_region" class="col-sm-4 col-xs-12 text-right">服務區域:</label>
+							<div class="col-sm-8 col-xs-12 ">
+								<p>台北市</p>
+							</div>
+						</div>
+						<div class="row">
+							<label for="consumer_address" class="col-sm-4 col-xs-12 text-right">服務地址:</label>
+							<div class="col-sm-8 col-xs-12 ">
+								<p>台北市北投區大業路10號</p>
+							</div>
+						</div>
+						<div class="row">
+							<label for="consumer_servicetime" class="col-sm-4 col-xs-12 text-right">預計服務時間:</label>
+							<div class="col-sm-8 col-xs-12 ">
+								<p>3小時</p>
+							</div>
+						</div>
+						<div class="row">
+							<label for="consumer_cost" class="col-sm-4 col-xs-12 text-right">服務費用:</label>
+							<div class="col-sm-8 col-xs-12 ">
+								<p>新台幣1200元</p>
+							</div>
+						</div>
+						<div class="row">
+							<label for="consumer_havepets" class="col-sm-4 col-xs-12 text-right">家中是否有寵物:</label>
+							<div class="col-sm-8 col-xs-12 ">
+								<p>有</p>
+							</div>
+						</div>				
+					</div>	
+				</div>			
+			</div>		
 		</div>
 	</main>
 		<!-- FOOTER-AREA START -->
