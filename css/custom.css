@@ -6844,3 +6844,88 @@ enu li a {
   background-color :rgb(40, 97, 255);
   opacity : 0.9;
 }
+
+/* Eric_Jhang  housekeer woker*/
+#application .form-GP1 {
+  width: 100%;
+  margin-bottom: 15px;
+}
+#application {
+  width: 60%;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px
+}
+#application .form_cols {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1
+}
+
+#application .mRomGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex
+}
+
+.formControl {
+  display: block;
+  width: 100%;
+  padding: 3px 3px;
+  font-size: 14px;
+  line-height: 34px;
+  color: #555;
+  background-color: #fff;
+  height: 34px;
+  border: 1px solid #d8d9da;
+  border-radius: 5px;
+  -webkit-transition: all .15s ease-in;
+  transition: all .15s ease-in
+}
+#application input[type=submit] {
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: 0
+}
+
+#application .controlGroup{
+  display: block;
+}
+
+#application .hasExperience {
+  margin-left: 5px;
+  margin-right: 5px
+}
+#application .smallTextField {
+  display: inline-block
+}
+#application .w30 {
+  width: 30%
+}
+#application .w8 {
+  width: 8%
+}
+
+.memberInfo-Center {
+  background-color: #ebf7fa;
+  padding-bottom: 50px;
+  min-height: 60vh
+}
+.memberInfo-Center .sidebar_left {
+  padding: 25px;
+  background-color: #fff
+}
+.memberInfo-Center .sidebar_left h2 {
+  font-size: 1.2em;
+  color: #3e4459;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  font-weight: 500
+}
+.memberInfo-Center .contentArea {
+  background-color: #fff;
+  padding: 50px 30px
+}
