@@ -1531,8 +1531,8 @@ button.active,
 }
 .btn {
   padding: 15px 29px;
-  font-size: 17px;
-  line-height: 25px;
+  font-size: 12px;
+  line-height: 2px;
   font-weight: 600;
   height: auto;
   background-color: #4ba0e8;
@@ -1625,7 +1625,7 @@ button.active,
   display: inline-block;
   vertical-align: sub;
   padding-right: 10px;
-  font-size: 20px;
+  font-size: 12px;
   padding-right: 12px;
 }
 .btn.text-left {
@@ -2264,6 +2264,7 @@ body.fixed {
   margin: 0;
   border: 0;
   color: #425d74;
+  box-shadow:5px 1px #cfcece;
 }
 .page-header-menu {
   border-top: 3px solid #4ba0e8;
@@ -2306,7 +2307,7 @@ body.fixed {
   margin-left: 0;
 }
 .page-header-top .logo {
-  min-width: 272px;
+  min-width: 27px;
   position: relative;
 }
 .page-header-top .logo .shine {
@@ -2317,7 +2318,7 @@ body.fixed {
 }
 @media (max-width: 1199px) {
   .page-header-top .logo {
-    min-width: 200px;
+    min-width: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -6660,7 +6661,7 @@ padding: 8px 12px !important;
   margin: 0 auto;
   max-width: 400px;
     padding: 10px 40px;
-  background:#009edf;
+  background:#54c0eb;
       color: #FFF;
     text-shadow: none;
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
@@ -6930,4 +6931,30 @@ enu li a {
 .memberInfo-Center .contentArea {
   background-color: #fff;
   padding: 50px 30px
+}
+.notice_area {
+  background-color:#fff;
+  padding: 2px 5px;
+  font-size: 14px;
+  font-family:DFKai-sb;
+  font-weight:bold;
+  border-style:ridge;
+  width: 90%;
+}
+.notice_area .h4{
+  font-size: 22px;
+  font-family:DFKai-sb;
+  margin:0px 0px ;
+  text-align:center;
+  border-style:none;
+}
+.order_area  {
+
+  width: 90%;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.order_block {
+  background-color:#fff;
+  margin-top:2px;
 }

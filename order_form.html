@@ -8,7 +8,7 @@
 	<meta name="description" content="House Keep 家事寶 家事清潔 ">
 	<meta name="author" content="housekeepbao.com">
 	<meta name="format-detection" content="telephone=no">
-	
+	<link rel="icon" href="favicon.ico">
 	<title>家事寶 家事清潔</title>
 	<!-- bootstrap V4 CDN -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -46,7 +46,7 @@
 	</script>
 
 	<header class="page-header header-sticky">
-		<div class="page-header-top">
+		<div class="page-header-top ">
 			<div class="container">
 				<div class="logo">
 					<a href="index.html"><img src="images/logo/logo.jpg" alt=""></a>
@@ -81,64 +81,64 @@
 	<!-- /Header -->
 	<main class="page-main">
 		<!-- Slider -->
-		<div class="block">
-            <div class="container">               
+		<div class="block order_block">
+            <div class="container ">               
 				<div class="row justify-content-start">
 					<div class="col-lg-4 col-md-4">
 					</div>
 					<div class="col-lg-8 col-sm-12 col-md-8">
-							<div class="row">
-									<div class="col-md-8">
-										<h3 class="text-center h-lg">注意</h3>
-										<ol>
-											<li>服務時間最低兩小時起</li>
-											<li>可以選擇由家事寶團隊為您服務或是一般潔客，我們保證所有潔客都經過嚴格篩選與訓練</li>
-											<li>家事寶團隊服務一小時費用 NT400元起</li>
-											<li>如果總數時間大於8小時，為了節省您的時間，將由家事寶派遣兩人團隊來替您服務喔</li>
-											<li>如果沒有你家的區域可以選，表示該區域家事寶還未開放服務喔</li>
-										</ol>
-									</div>
-								</div>
-						<div class = "row">
-							<label class = "col-sm-3 col-xs-6">選擇清潔時數</label>
-							<div class="col-sm-3 col-xs-6">
-								<select name="choicehour">
-									<option value="2">2小時</option>
-									<option value="2.5">2.5小時</option>
-									<option value="3">3小時</option>
-								</select>
-							</div>
+						<div class = "notice_area">
+							<h4 class="notice_area h4 ">注意</h4>
+							<ol>
+								<li>服務時間最低兩小時起</li>
+								<li>可以選擇由家事寶團隊為您服務或是一般潔客，我們保證所有潔客都經過嚴格篩選與訓練</li>
+								<li>家事寶團隊服務一小時費用 NT400元起</li>
+								<li>如果總數時間大於8小時，為了節省您的時間，將由家事寶派遣兩人團隊來替您服務喔</li>
+								<li>如果沒有你家的區域可以選，表示該區域家事寶還未開放服務喔</li>
+							</ol>
 						</div>
-						<div class = "row">
-								<label class = "col-sm-3 col-xs-6">有無寵物</label>
+						<div class= "order_area">
+							<div class = "row">
+								<label class = "col-sm-3 col-xs-6">選擇清潔時數</label>
 								<div class="col-sm-3 col-xs-6">
-									<label for ="havePets" class="radio-inline">
-										<input type="radio"  name="pets" value="有寵物" id="havePets" class="pets">
-										有寵物
+									<select name="choicehour">
+										<option value="2">2小時</option>
+										<option value="2.5">2.5小時</option>
+										<option value="3">3小時</option>
+									</select>
+								</div>
+							</div>
+							<div class = "row">
+									<label class = "col-sm-3 col-xs-6">有無寵物</label>
+									<div class="col-sm-3 col-xs-6">
+										<label for ="havePets" class="radio-inline">
+											<input type="radio"  name="pets" value="有寵物" id="havePets" class="pets">
+											有寵物
+										</label>
+										<label for ="noPets" class="radio-inline">
+											<input type="radio" name="pets" value id="noPets" class="pets">
+											無寵物
+										</label>
+									</div>
+							</div>
+
+							<div class = "row">
+								<label class = "col-sm-3 col-xs-6">指定性別</label>
+								<div class="col-sm-3 col-xs-6">
+									<label class="sex radio-inline">
+										<input type="radio"  name="sex" value="female" >
+										指定女性
 									</label>
-									<label for ="noPets" class="radio-inline">
-										<input type="radio" name="pets" value id="noPets" class="pets">
-										無寵物
+									<label  class="sex radio-inline">
+										<input type="radio" name="sex" value="both"  >
+										不指定
 									</label>
 								</div>
-						</div>
-
-						<div class = "row">
-							<label class = "col-sm-3 col-xs-6">指定性別</label>
-							<div class="col-sm-3 col-xs-6">
-								<label class="sex radio-inline">
-									<input type="radio"  name="sex" value="female" >
-									指定女性
-								</label>
-								<label  class="sex radio-inline">
-									<input type="radio" name="sex" value="both"  >
-									不指定
-								</label>
 							</div>
-						</div>
 
-						<div class="formGroup  ">
-							<a href="order_form_second_page.html"  type="button" id="firstorderstepbtn" class="btn ">下一步</a>
+							<div class="formGroup  ">
+								<a href="order_form_second_page.html"  type="button" id="firstorderstepbtn" class="btn ">下一步</a>
+							</div>
 						</div>
 					</div>
 			</div>
